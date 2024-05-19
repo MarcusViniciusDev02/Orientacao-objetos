@@ -1,11 +1,11 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Musica musica = new Musica();
 
+
         Musico guitarrista = new Musico();
         guitarrista.ehCantor = false;
+        guitarrista.ehInstrumentista = true ;
         guitarrista.idade = 13;
         guitarrista.instrumento = "Guitarra";
         guitarrista.nome = "Pedro";
@@ -14,13 +14,14 @@ public class Main {
         cantor.ehCantor = true;
         cantor.idade = 27;
         cantor.instrumento = "Voz";
-        cantor.nome = "Davi";
+        cantor.nome = "Vinicius";
 
         musica.musicos.add(guitarrista);
         musica.musicos.add(cantor);
-
         musica.tocarMusica();
 
+        musica.imprimirDetalhes();
 
     }
+
 }
