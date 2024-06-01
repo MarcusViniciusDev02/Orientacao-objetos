@@ -29,11 +29,22 @@ Sempre utilizar um ArrayList por ser um vetor mais poderoso.
 ### Protegido
 - Apenas quem é da mesma família pode acessar o atributo. (Quem está no mesmo pacote).
 ---
-### Pacote (Package)
+### Pacotes (Packages)
 - Forma de organizar classes.
+- Devem ser usados para melhor organizar os códigos.
 ---
+### Setters
+    public void setAutor(String autor){
+        this.autor = autor;
+    }
+- Um método que modifica o valor do atributo;
+- this = cria uma referência do atributo dentro da função.
+- É no set que eu consigo criar lógica de programação.
+---
+
 
 
 ### Dica:
 - Não dá para modificar o valor de um item no array. Quando quiser mudar o item, o retire da lista, e adicione um novo ao final da lista.
+- Devo privar tudo para deixar um código mais seguro;
 ---
