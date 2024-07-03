@@ -9,16 +9,26 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Filme filme = new Filme("Alien", "Ridley Scott", Arrays.asList("Sigourney Weaver"));
+        List<String> atores = new ArrayList<>();
+        atores.add("Sigourney Weaver");
+
+        Filme filme = new Filme("Alien", "Ridley Scott", atores);
+
         Jogo jogo = new Jogo("Zelda: Ocarina of Time", "Nintendo 64");
 
-        Locadora<AudioVisual> locadora = new Locadora<>();
+        Locadora<Filme> locadora = new Locadora<>();
+        Locadora<Jogo> locadoraJogo = new Locadora<>();
+        Locadora<AudioVisual> locadoraTop = new Locadora<>();
         locadora.adicionarItem(filme);
-        locadora.adicionarItem(jogo);
+        locadora.adicionarItem(filme);
+        locadoraJogo.adicionarItem(jogo);
+        locadoraTop.adicionarItem(filme);
+        locadoraTop.adicionarItem(jogo);
+
 
         locadora.listarItens();
 
-        locadora.buscarItem("Zelda");
+        locadora.buscarItem("Zelda: Ocarina of time");
 
 
     }

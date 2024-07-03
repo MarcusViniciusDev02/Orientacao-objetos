@@ -15,7 +15,6 @@ public class Filme implements AudioVisual{
         this.atores = atores;
     }
 
-
     @Override
     public void exibirInfo() {
         System.out.printf("""

@@ -9,7 +9,6 @@ public class Jogo implements AudioVisual{
         this.plataforma = plataforma;
     }
 
-
     @Override
     public void exibirInfo() {
         System.out.printf("""
