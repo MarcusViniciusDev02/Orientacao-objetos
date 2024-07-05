@@ -5,7 +5,7 @@ public class App {
         saudarUsuario();
     }
 
-    public static String escanearNome(){
+    public static String escanearNome(){ //Como se fosse um callback
         Scanner entrada = new Scanner(System.in);
         return entrada.nextLine();
     }
