@@ -16,12 +16,13 @@ public class BibiotecaMusical {
         }
     }
 
-    public void buscarMusica(String titulo) throws MusicaNaoEncontradaException {
+    public Musica buscarMusica(String titulo) throws MusicaNaoEncontradaException {
         Musica musica = acervo.get(titulo);
+        
         if(musica == null){
             throw new MusicaNaoEncontradaException();
         }else{
-            System.out.println(musica);
+            return musica;
         }
     }
 }

@@ -5,8 +5,10 @@ public class App {
         BibiotecaMusical bibliotecaMusical = new BibiotecaMusical();
         bibliotecaMusical.adicionarMusica("Smells Like a Teen Spirit", musica1);
         bibliotecaMusical.listarMusicas();
-        bibliotecaMusical.buscarMusica("Smells Like a Teen Spirit");
-        bibliotecaMusical.buscarMusica("Closer");
-        
+        try{
+        bibliotecaMusical.buscarMusica("Ai foi que o barraco desandou");
+        }catch(MusicaNaoEncontradaException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
